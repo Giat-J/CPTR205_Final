@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', DOMContentLoaded => {
     // LOAD MODEL
     let player, head; 
     const loader = new GLTFLoader(); 
-    loader.load('./assets/test_scene.glb', gltf => {
+    loader.load('./assets/maze.glb', gltf => {
         scene.add(gltf.scene); 
         scene.traverse(node => {
             if(node instanceof THREE.Mesh) {
